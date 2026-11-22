@@ -1,42 +1,39 @@
 # Eidos — Pixel Infinite
 
-**Eidos** é a divisão de desenvolvimento web da **Pixel Infinite**, especializada em sites profissionais, identidade digital e experiências web que unem design, engenharia e resultados.
+**Eidos** é a divisão de design e desenvolvimento web da **Pixel Infinite**, dedicada a sites autorais, experiências digitais e interfaces criativas.
 
-A palavra grega **εἶδος (eîdos)** remete a forma, aparência e representação. Nossa proposta: **dar forma ao imaginado**.
+**Damos forma ao imaginado.** O nome vem do grego εἶδος (forma, aspecto, ideia).
 
-- **Novo endereço planejado:** https://eidos.pixelinfinite.com.br (depende de configuração da Cloudflare).
-- **Endereço anterior:** https://pageflow.pixelinfinite.com.br (legado, manter até concluir redirecionamento).
-- **Domínio institucional:** https://pixelinfinite.com.br
-- **Branch de produção:** `main`.
-- **Hospedagem:** Cloudflare Workers.
-- **Nome do repositório previsto:** `angelpixel41/eidos` (renomeação administrativa do GitHub ainda pendente).
+- **Site oficial:** https://eidos.pixelinfinite.com.br
+- **Hospedagem:** Cloudflare Workers, Worker `eidos`
+- **Branch de produção:** `main`
+- **Repositório atual:** `angelpixel41/pageflow` — renomeação administrativa para `angelpixel41/eidos` ainda pendente no GitHub.
+- **Endereço antigo:** `pageflow.pixelinfinite.com.br` — desativado; Worker, DNS e domínio anterior removidos em 22/11/2026.
 
-## Visão
+## Site
 
-Site institucional e portfólio comercial do Eidos. Os projetos de cada cliente permanecem em repositórios independentes, sem reescrita de histórico.
+O site é uma experiência institucional própria do Eidos: hero editorial com composição geométrica animada, quatro especialidades, conceitos demonstrativos de projetos, método de criação e contato comercial.
 
-## Identidade visual
-
-A assinatura **Eidos — uma divisão Pixel Infinite** preserva parentesco com a Pixel Infinite, usando azul, ciano, índigo e violeta. Veja [diretrizes da marca](docs/branding.md).
+Os exemplos de Bocca Odontologia e Criative Ambientes são **demonstrações comerciais**, não contratos.
 
 ## Desenvolvimento
 
-Projeto em JavaScript sem framework, com página institucional provisória e Worker Cloudflare.
+Worker ES modules em `src/index.js`, sem framework de interface. Identidade da Pixel Infinite em azul, ciano, índigo e violeta.
 
-```sh
+```bash
 npm install
 npm run dev
-```
-
-## Publicação
-
-```sh
 npm run deploy
 ```
 
-**Atenção:** o `wrangler.jsonc` agora aponta ao Worker `eidos`. Isso cria/publica um Worker distinto do legado quando houver deploy; configurar rota, DNS e redirecionamento na Cloudflare antes de divulgar o novo subdomínio. Não remover o Worker antigo antes de validar o novo.
+Arquivos de suporte:
+- [Identidade visual](docs/branding.md)
+- [Roadmap](docs/roadmap.md)
+- [Migração](docs/migracao.md)
 
-Veja [plano de migração](docs/migracao.md) para concluir a transição de infraestrutura e repositórios.
+## Publicação e segurança
+
+A infraestrutura de produção foi publicada via API da Cloudflare e associada a `eidos.pixelinfinite.com.br`. Os metadados canônicos, `robots.txt`, `sitemap.xml`, `favicon.svg` e `/health` estão no Worker.
 
 ## Contato
 

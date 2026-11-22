@@ -1,27 +1,26 @@
-# Direção do projeto Eidos
+# Eidos — evolução do estúdio digital
 
-## Objetivo
-Site institucional do **Eidos**, divisão web da Pixel Infinite, apresentando serviços, portfólio e captação de clientes locais.
+## Entregue em 22/11/2026
+- Identidade PageFlow substituída pela Eidos no código institucional.
+- Site editorial criativo e responsivo implementado.
+- Serviços, conceitos comerciais, método e contato no ar.
+- Worker `eidos` publicado na Cloudflare.
+- Domínio oficial: https://eidos.pixelinfinite.com.br.
+- Antigo Worker/hostname PageFlow removidos.
+- Arquivos de configuração `package.json` e `wrangler.jsonc` migrados ao nome `eidos`.
 
-## Identidade
-- Nome: **Eidos** (do grego εἶδος, forma / aparência).
-- Proposta: **Damos forma ao imaginado.**
-- Manter relação com a Pixel Infinite: aparência tecnológica e sóbria, fundos escuros, azul/ciano/violeta.
-- Assinatura: **uma divisão Pixel Infinite**.
-- Aplicar o logotipo compacto aprovado para Eidos; converter e validar o asset para web antes da publicação visual.
-- Paleta e tipografia: ver [branding.md](branding.md).
-
-## Evolução
-1. Concluir migração de marca, nomes dos repositórios e domínio/Worker sem perder histórico ou SEO.
-2. Criar site institucional completo, responsivo e acessível.
-3. Criar páginas **Serviços, Projetos, Sobre e Contato**, com segmentos quando relevantes.
-4. Conectar demonstrações reais de clientes (Martins Móveis, Imperium, Criative, Bocca) como portfólio; identificar corretamente casos demonstrativos e não contratados.
-5. Adicionar captação de leads com anti-spam, SEO local para Planaltina-DF e privacidade.
-6. Validar mobile, Core Web Vitals, metadados e acessibilidade antes do lançamento.
+## Próximas melhorias
+1. **Renomeação administrativa no GitHub**: `pageflow` → `eidos` e renomear os cinco repositórios de clientes, preservando commits.
+2. Testar layout em dispositivos físicos e com leitores de tela.
+3. Criar páginas próprias de serviços e cases mais detalhados.
+4. Validar todos os destinos externos do portfólio periodicamente.
+5. Considerar formulário de captação com proteção anti-spam, consentimento e política de privacidade.
+6. Implementar métrica de conversão sem coletar dados desnecessários.
+7. Monitorar Core Web Vitals e acessibilidade antes de campanhas.
 
 ## Operação
-- Novo domínio desejado: https://eidos.pixelinfinite.com.br (ainda depende de configuração Cloudflare).
-- Domínio legado: https://pageflow.pixelinfinite.com.br (preservar até redirecionamento).
-- Nome do novo Worker no repositório: `eidos`.
-- Branch de produção: `main`.
-- Não modificar o site principal da Pixel Infinite ou os projetos de clientes durante a migração institucional.
+- Worker: `eidos`
+- DNS: custom domain Cloudflare `eidos.pixelinfinite.com.br`
+- Branch: `main`
+- Contato: `angel@pixelinfinite.com.br`
+- Não alterar o domínio principal Pixel Infinite nem sites próprios dos clientes.

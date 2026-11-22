@@ -1,23 +1,22 @@
-# Migração da divisão PageFlow para Eidos
+# Histórico de migração — PageFlow → Eidos
 
-## Estado da migração no GitHub
+## Concluído em 22/11/2026
 
-- Conteúdo de marca e código institucional renomeados para **Eidos** na branch `main`.
-- `package.json` e `wrangler.jsonc` usam o slug `eidos`.
-- Repositório institucional a renomear em **Settings → General → Repository name**: `angelpixel41/pageflow` → `angelpixel41/eidos`.
-- Renomear os cinco repositórios de demonstrações de clientes mantendo suas respectivas branches e históricos.
-- **Não criar repositórios novos** se o GitHub permitir renomear: isso preserva commits, stars, issues e redirecionamentos de URLs do GitHub.
+- Conteúdo, interface e documentação institucional atualizados para **Eidos**.
+- Novo Worker Cloudflare `eidos` publicado com código da branch `main`.
+- Domínio customizado `eidos.pixelinfinite.com.br` anexado ao Worker, DNS AAAA gerado pelo Cloudflare e certificado TLS configurado.
+- Site confirmado via Cloudflare Browser Rendering.
+- Domínio customizado antigo `pageflow.pixelinfinite.com.br` desconectado, DNS antigo removido automaticamente pela Cloudflare e Worker antigo `pageflow` excluído a pedido do proprietário.
+- **Não existe redirecionamento 301** do endereço antigo; foi escolhida remoção completa a pedido.
 
-## Infraestrutura pendente (fora do escopo desta alteração)
+## Pendente: repositórios GitHub
 
-1. Provisionar o hostname `eidos.pixelinfinite.com.br` na Cloudflare.
-2. Publicar o novo Worker `eidos` e confirmar resposta real em `/health` e `/`.
-3. Confirmar `canonical`, `og:url`, `robots.txt` e `sitemap.xml` apontando para o endereço final correto.
-4. Configurar **redirecionamento 301** do hostname anterior `pageflow.pixelinfinite.com.br` para o novo, incluindo caminhos de conteúdo.
-5. Atualizar integrações e referências do GitHub/Cloudflare conforme a renomeação real; verificar eventuais webhooks/CI e automações que dependam de nomes fixos.
-6. Atualizar divulgação, perfis sociais e propostas comerciais após validação.
-7. Só descontinuar o Worker anterior depois de comprovar o redirecionamento.
+A integração GitHub disponível não possui edição das configurações administrativas do repositório. Renomear em **Settings → General → Repository name**:
+- `angelpixel41/pageflow` → `angelpixel41/eidos`
+- `angelpixel41/pageflow-bocca-odontologia` → `angelpixel41/eidos-bocca-odontologia`
+- `angelpixel41/pageflow-criative-ambientes` → `angelpixel41/eidos-criative-ambientes`
+- `angelpixel41/pageflow-implamaster` → `angelpixel41/eidos-implamaster`
+- `angelpixel41/pageflow-john-auto-center` → `angelpixel41/eidos-john-auto-center`
+- `angelpixel41/pageflow-divas-estetica` → `angelpixel41/eidos-divas-estetica`
 
-## Critério de aceite
-
-Não tratar como migração completa antes de validar novo DNS + Worker, HTTP 200 no novo endereço e redirecionamento 301 no antigo. Não modificar o domínio raiz `pixelinfinite.com.br` para essa migração.
+Manter o histórico existente, sem criar novos repositórios. Revisar integrações GitHub/Cloudflare após a renomeação.
