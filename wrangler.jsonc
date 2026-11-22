@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "pageflow",
+  "name": "eidos",
   "main": "src/index.js",
   "compatibility_date": "2026-11-18",
   "observability": {

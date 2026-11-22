@@ -1,9 +1,9 @@
 {
-  "name": "pageflow",
+  "name": "eidos",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "PageFlow institutional web presence by Pixel Infinite.",
+  "description": "Eidos institutional web presence by Pixel Infinite.",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy"

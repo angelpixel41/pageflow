@@ -1,23 +1,27 @@
-# Direção do projeto PageFlow
+# Direção do projeto Eidos
 
 ## Objetivo
-Site institucional da PageFlow, divisão web da Pixel Infinite, apresentando serviços, portfólio e conversão de leads locais.
+Site institucional do **Eidos**, divisão web da Pixel Infinite, apresentando serviços, portfólio e captação de clientes locais.
 
 ## Identidade
-- Preservar relação com a identidade da Pixel Infinite: linguagem premium, minimalista, fundos escuros, azul e violeta em contraste.
-- A marca PageFlow deve possuir personalidade própria, com assinatura **by Pixel Infinite**.
-- O logo gráfico aprovado em conversa será incorporado em formato adequado para web numa próxima etapa; a base inicial utiliza wordmark tipográfico provisório.
+- Nome: **Eidos** (do grego εἶδος, forma / aparência).
+- Proposta: **Damos forma ao imaginado.**
+- Manter relação com a Pixel Infinite: aparência tecnológica e sóbria, fundos escuros, azul/ciano/violeta.
+- Assinatura: **uma divisão Pixel Infinite**.
+- Aplicar o logotipo compacto aprovado para Eidos; converter e validar o asset para web antes da publicação visual.
+- Paleta e tipografia: ver [branding.md](branding.md).
 
 ## Evolução
-1. Preparar infraestrutura e conectar o GitHub ao Worker do domínio.
-2. Criar site institucional completo, responsivo e acessível, não apenas landing page.
-3. Criar páginas **Serviços, Projetos, Sobre, Contato** e páginas por segmento se relevantes.
-4. Conectar demonstrações de clientes (Martins Móveis, Imperium, Criative, Bocca) como portfólio, identificando claramente o caráter demonstrativo e não contratado.
-5. Adicionar formulário ou canal seguro de captação de leads, anti-spam, SEO local para Planaltina-DF e privacidade.
-6. Validar mobile, Core Web Vitals, metatags e WCAG antes de lançamento.
+1. Concluir migração de marca, nomes dos repositórios e domínio/Worker sem perder histórico ou SEO.
+2. Criar site institucional completo, responsivo e acessível.
+3. Criar páginas **Serviços, Projetos, Sobre e Contato**, com segmentos quando relevantes.
+4. Conectar demonstrações reais de clientes (Martins Móveis, Imperium, Criative, Bocca) como portfólio; identificar corretamente casos demonstrativos e não contratados.
+5. Adicionar captação de leads com anti-spam, SEO local para Planaltina-DF e privacidade.
+6. Validar mobile, Core Web Vitals, metadados e acessibilidade antes do lançamento.
 
 ## Operação
-- Dominio institucional: https://pageflow.pixelinfinite.com.br
-- Worker existente: `pageflow`
-- Branch de produção: `main`
-- Sem alterações no domínio principal Pixel Infinite.
+- Novo domínio desejado: https://eidos.pixelinfinite.com.br (ainda depende de configuração Cloudflare).
+- Domínio legado: https://pageflow.pixelinfinite.com.br (preservar até redirecionamento).
+- Nome do novo Worker no repositório: `eidos`.
+- Branch de produção: `main`.
+- Não modificar o site principal da Pixel Infinite ou os projetos de clientes durante a migração institucional.

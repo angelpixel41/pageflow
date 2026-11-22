@@ -1,20 +1,27 @@
-# PageFlow
+# Eidos — Pixel Infinite
 
-**PageFlow** é a divisão de desenvolvimento web da **Pixel Infinite**, especializada em websites profissionais, identidade digital e experiências de alta conversão.
+**Eidos** é a divisão de desenvolvimento web da **Pixel Infinite**, especializada em sites profissionais, identidade digital e experiências web que unem design, engenharia e resultados.
 
-- **Site:** https://pageflow.pixelinfinite.com.br
-- **Domínio principal:** https://pixelinfinite.com.br
-- **Branch de produção:** `main`
-- **Hospedagem:** Cloudflare Workers
-- **Repositório:** `angelpixel41/pageflow`
+A palavra grega **εἶδος (eîdos)** remete a forma, aparência e representação. Nossa proposta: **dar forma ao imaginado**.
+
+- **Novo endereço planejado:** https://eidos.pixelinfinite.com.br (depende de configuração da Cloudflare).
+- **Endereço anterior:** https://pageflow.pixelinfinite.com.br (legado, manter até concluir redirecionamento).
+- **Domínio institucional:** https://pixelinfinite.com.br
+- **Branch de produção:** `main`.
+- **Hospedagem:** Cloudflare Workers.
+- **Nome do repositório previsto:** `angelpixel41/eidos` (renomeação administrativa do GitHub ainda pendente).
 
 ## Visão
 
-Site institucional e portfólio comercial da PageFlow, mantendo os projetos de cada cliente nos seus próprios repositórios.
+Site institucional e portfólio comercial do Eidos. Os projetos de cada cliente permanecem em repositórios independentes, sem reescrita de histórico.
+
+## Identidade visual
+
+A assinatura **Eidos — uma divisão Pixel Infinite** preserva parentesco com a Pixel Infinite, usando azul, ciano, índigo e violeta. Veja [diretrizes da marca](docs/branding.md).
 
 ## Desenvolvimento
 
-Projeto em JavaScript sem framework, com uma página provisória e Worker Cloudflare. A implantação usa `wrangler deploy` e poderá ser evoluída para um site institucional completo.
+Projeto em JavaScript sem framework, com página institucional provisória e Worker Cloudflare.
 
 ```sh
 npm install
@@ -27,7 +34,9 @@ npm run dev
 npm run deploy
 ```
 
-O projeto de produção na Cloudflare se chama `pageflow` e responde pelo domínio `pageflow.pixelinfinite.com.br`.
+**Atenção:** o `wrangler.jsonc` agora aponta ao Worker `eidos`. Isso cria/publica um Worker distinto do legado quando houver deploy; configurar rota, DNS e redirecionamento na Cloudflare antes de divulgar o novo subdomínio. Não remover o Worker antigo antes de validar o novo.
+
+Veja [plano de migração](docs/migracao.md) para concluir a transição de infraestrutura e repositórios.
 
 ## Contato
 
