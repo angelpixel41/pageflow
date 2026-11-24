@@ -4,6 +4,7 @@
 - Identidade PageFlow substituída pela Eidos no código institucional.
 - Site editorial criativo e responsivo implementado.
 - Serviços, conceitos comerciais, método e contato no ar.
+- NeedTech apresentada no portfólio como produto Eidos publicado, com link para https://needtechdf.com.br.
 - Worker `eidos` publicado na Cloudflare.
 - Domínio oficial: https://eidos.pixelinfinite.com.br.
 - Antigo Worker/hostname PageFlow removidos.

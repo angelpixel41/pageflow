@@ -14,7 +14,7 @@
 
 O site é uma experiência institucional própria do Eidos: hero editorial com composição geométrica animada, quatro especialidades, conceitos demonstrativos de projetos, método de criação e contato comercial.
 
-Os exemplos de Bocca Odontologia e Criative Ambientes são **demonstrações comerciais**, não contratos.
+Bocca Odontologia e Criative Ambientes são **conceitos demonstrativos** (não contratos). **NeedTech** é produto publicado no portfólio do Eidos, com site e acompanhamento de OS integrado ao Bling: https://needtechdf.com.br.
 
 ## Desenvolvimento
 
