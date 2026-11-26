@@ -1,11 +1,12 @@
 {
   "name": "eidos",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Eidos institutional web presence by Pixel Infinite.",
+  "description": "Eidos monorepo — institutional and 18 non-official client demo concepts",
   "scripts": {
     "dev": "wrangler dev",
+    "test": "node --test tests/*.test.mjs",
     "deploy": "wrangler deploy"
   },
   "devDependencies": {

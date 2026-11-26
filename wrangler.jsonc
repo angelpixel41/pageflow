@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "eidos",
-  "main": "src/index.js",
+  "main": "src/router.js",
   "compatibility_date": "2026-11-18",
   "observability": {
     "enabled": true
