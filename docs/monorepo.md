@@ -27,7 +27,7 @@ Atenção: `npm run deploy` publica o Worker de produção `eidos`. Valide em am
 
 ## DNS / Cloudflare
 
-O código roteia os domínios, mas **código não é DNS**. Cada nome deverá ser criado/associado em Cloudflare Workers Custom Domains. Não modificar domínios existentes como `bocca.pixelinfinite.com.br` e `criative.pixelinfinite.com.br` sem inspeção e plano de rollback. Publicar domínios novos somente após validar prospect (razão social, existência e status comercial).
+Em 25/11/2026, o Worker `eidos` recebeu 17 novos Custom Domains (todos os projetos, exceto `bocca`, que mantém Worker próprio). O antigo endereço da Criative `criative-ambientes.pixelinfinite.com.br` continua no projeto Pages existente, e o novo `criative.pixelinfinite.com.br` aponta para Eidos. Os conceitos permanecem identificados como **não oficiais** e `noindex`. Validar prospect (razão social, existência, existência de site próprio) antes de contato comercial. O ambiente de validação `eidos-stage.pixelinfinite.com.br` é um Worker separado.
 
 ## Migração final GitHub
 

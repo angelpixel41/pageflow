@@ -1,40 +1,62 @@
 # Eidos — Pixel Infinite
 
-**Eidos** é a divisão de design e desenvolvimento web da **Pixel Infinite**, dedicada a sites autorais, experiências digitais e interfaces criativas.
+**Eidos** é o estúdio de web design e experiências digitais da Pixel Infinite. **Damos forma ao imaginado.**
 
-**Damos forma ao imaginado.** O nome vem do grego εἶδος (forma, aspecto, ideia).
+- Site institucional: https://eidos.pixelinfinite.com.br/
+- Catálogo interno de conceitos (não oficial): https://eidos.pixelinfinite.com.br/preview
+- Repositório canônico atual: https://github.com/angelpixel41/pageflow (renomeação administrativa para `Eidos` pendente)
+- Branch principal: `main`
+- Cloudflare Worker: `eidos` (um Worker roteia 18 conceitos e o site institucional)
+- Deploy: Cloudflare Workers, sem GitHub Actions
 
-- **Site oficial:** https://eidos.pixelinfinite.com.br
-- **Hospedagem:** Cloudflare Workers, Worker `eidos`
-- **Branch de produção:** `main`
-- **Repositório atual:** `angelpixel41/pageflow` — renomeação administrativa para `angelpixel41/eidos` ainda pendente no GitHub.
-- **Endereço antigo:** `pageflow.pixelinfinite.com.br` — desativado; Worker, DNS e domínio anterior removidos em 22/11/2026.
+## Inventário de demonstrações
 
-## Site
+Os conceitos são **propostas de design**, não representam contratação, autorização nem conteúdo verificado do estabelecimento. As rotas não recebem formulários, não coletam dados, não incluem depoimentos fictícios e usam `noindex`. Antes de utilizar comercialmente, confirmar se o negócio existe, se não tem site e se a abordagem é apropriada.
 
-O site é uma experiência institucional própria do Eidos: hero editorial com composição geométrica animada, quatro especialidades, conceitos demonstrativos de projetos, método de criação e contato comercial.
+| Projeto | Subdomínio / preview | Situação |
+| --- | --- | --- |
+| Bocca Odontologia | https://bocca.pixelinfinite.com.br/ (Worker original) · https://eidos.pixelinfinite.com.br/preview/bocca | Abordado, aguardando |
+| Criative Ambientes | https://criative.pixelinfinite.com.br/ · site anterior https://criative-ambientes.pixelinfinite.com.br/ | Abordado, sem resposta |
+| ImplaMaster | https://implamaster.pixelinfinite.com.br/ | Abordagem não confirmada |
+| John Auto Center | https://john-auto.pixelinfinite.com.br/ | Abordagem não confirmada |
+| Divas | https://divas.pixelinfinite.com.br/ | Abordagem não confirmada |
+| PH Ar Condicionado | https://ph-ar.pixelinfinite.com.br/ | Novo prospect |
+| Marmoraria Montes Claros | https://marmoraria-montes-claros.pixelinfinite.com.br/ | Novo prospect |
+| JL Vidros | https://jl-vidros.pixelinfinite.com.br/ | Novo prospect |
+| FASTT CLEAN | https://fastt-clean.pixelinfinite.com.br/ | Novo prospect |
+| Espaço Brenna Vilas Bôas | https://brenna-vilas-boas.pixelinfinite.com.br/ | Novo prospect |
+| Jenni Studio | https://jenni-studio.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Essência da Beleza | https://essencia-beleza.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Jhulia Alves Rech | https://jhulia-alves.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Gabriela Cristina Candido | https://gabriela-candido.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Laicia da Costa Santos | https://laicia-costa.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Sara de Barros | https://sara-barros.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Henrique Cesar Gomes Lopes | https://henrique-lopes.pixelinfinite.com.br/ | Prospect pendente de validação |
+| Fabyanne Braz Santos | https://fabyanne-braz.pixelinfinite.com.br/ | Prospect pendente de validação |
 
-Bocca Odontologia e Criative Ambientes são **conceitos demonstrativos** (não contratos). **NeedTech** é produto publicado no portfólio do Eidos, com site e acompanhamento de OS integrado ao Bling: https://needtechdf.com.br.
+**NeedTech** é um cliente pagante com projeto independente no repositório `angelpixel41/NeedTech`; está apenas vinculado ao portfólio por https://needtechdf.com.br/. **Martins Móveis Planejados foi excluída** da prospecção (já possui site próprio).
 
-## Desenvolvimento
+## Código
 
-Worker ES modules em `src/index.js`, sem framework de interface. Identidade da Pixel Infinite em azul, ciano, índigo e violeta.
+- `src/index.js`: site institucional preexistente, preservado.
+- `src/demos.js`: metadados e layouts de todas as demonstrações, por nicho.
+- `src/router.js`: roteamento por hostname e `/preview/<slug>`.
+- `legacy/`: cópias dos cinco READMEs dos repositórios satélites antes da consolidação.
+- `AGENTS.md`: regras para Codex e colaboradores.
+- `docs/monorepo.md`: guia arquitetural, migração e segurança.
+- `tests/demos.test.mjs`: testes de rotas, segurança e renderização.
 
-```bash
+```sh
 npm install
+npm test
 npm run dev
 npm run deploy
 ```
 
-Arquivos de suporte:
-- [Identidade visual](docs/branding.md)
-- [Roadmap](docs/roadmap.md)
-- [Migração](docs/migracao.md)
+Atenção: `npm run deploy` atualiza o Worker de produção `eidos`. Antes de publicar, executar os testes e conferir o site institucional. Para correções de DNS ou rollback, consultar a Cloudflare. As associações de Custom Domains foram configuradas diretamente na Cloudflare em 25/11/2026.
 
-## Publicação e segurança
+## Renomeação final do GitHub
 
-A infraestrutura de produção foi publicada via API da Cloudflare e associada a `eidos.pixelinfinite.com.br`. Os metadados canônicos, `robots.txt`, `sitemap.xml`, `favicon.svg` e `/health` estão no Worker.
+Os conectores da sessão não têm permissão para renomear nem excluir repositórios. O repositório de origem `angelpixel41/pageflow` é **a base canônica** e pode ser renomeado para `Eidos` nas configurações sem perder histórico de commits. Depois de confirmar a renomeação e conteúdo, arquivar/excluir os cinco repositórios satélites. Não excluir `NeedTech`.
 
-## Contato
-
-angel@pixelinfinite.com.br
+Veja [instruções para renomear e limpar os repositórios](docs/github-migration.md).
